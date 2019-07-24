@@ -26,6 +26,107 @@
         </div>
     </nav>
 
+    <div class="container">
+
+        <br>
+        <form onsubmit="return submit()">
+            <div class="form-group row">
+                <label for="nameInput" class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="nameInput" placeholder="Name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="aboutInput" class="col-sm-2 col-form-label">About</label>
+                <div class="col-sm-10">
+                    <textarea type="textarea" class="form-control" id="aboutInput" placeholder="About"></textarea>
+                </div>
+            </div>
+            <fieldset class="form-group">
+                <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0">Role</legend>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                                checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                Developer
+                            </label>
+                        </div><div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                                Product Manager
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                            <label class="form-check-label" for="gridRadios2">
+                                People Manager
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                            <label class="form-check-label" for="gridRadios3">
+                                Sales and Marketing
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-group row">
+                <div class="col-sm-2">Match With</div>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                            Developer
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck2">
+                        <label class="form-check-label" for="gridCheck2">
+                            Product Manager
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck3">
+                        <label class="form-check-label" for="gridCheck3">
+                            People Manager
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck4">
+                        <label class="form-check-label" for="gridCheck4">
+                            Sales and Marketing
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                            Enable Matching
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="col-sm-10">
+            <button type="button" class="btn btn-primary" onclick="submit()">Save Profile</button>
+            <!-- <div>
+                <font id="resultDiv" color="green"></font>
+            </div> -->
+        </div>
+    </div>
+
+    <script>
+       function submit () {
+            alert("Profile saved!")
+            return false;
+        };
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
